@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Copy Tool</div>
+        <div class="input-section">
+            <div class="column">
+                <span class="label">Error:</span>
+            </div>
+            <div class="column">
+                <input type="text" id="errorInput" class="input" placeholder="Enter error text...">
+            </div>
+        </div>
+        <div class="input-section">
+            <div class="column">
+                <span class="label">Fix:</span>
+            </div>
+            <div class="column">
+                <input type="text" id="fixInput" class="input" placeholder="Enter fix text...">
+            </div>
+        </div>
+        <button id="copyButton" onclick="copyText()">Copy</button>
+    </div>
+
+    <script>
+        function copyText() {
+            var errorText = document.getElementById('errorInput').value;
+            var fixText = document.getElementById('fixInput').value;
+
+            var copiedText = "Error: " + errorText + "\nFix: " + fixText;
+
+            // Copy to clipboard
+            var textarea = document.createElement('textarea');
+            textarea.value = copiedText;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+        }
+    </script>
+</body>
+</html>
