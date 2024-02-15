@@ -30,7 +30,7 @@ body {
 
 .column {
     flex: 1; /* Let columns grow and shrink equally */
-    border: 1px solid #ccc
+    margin-right: 15px;
 }
 
 .column:first-child {
