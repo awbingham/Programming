@@ -65,7 +65,7 @@ body {
     padding: 10px;
     margin-top: 20px;
     font-size: 18px;
-    background-color: #FF0000;
+    background-color: #37BF24;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -73,5 +73,5 @@ body {
 }
 
 #copyButton:hover {
-    background-color: #FF0000;
+    background-color: #37BF24;
 }
