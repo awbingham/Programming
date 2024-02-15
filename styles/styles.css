@@ -30,7 +30,6 @@ body {
 
 .column {
     flex: 1; /* Let columns grow and shrink equally */
-    margin-right: 15px; /* fix spacing */
 }
 
 .column:first-child {
@@ -53,6 +52,7 @@ body {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-right: 15px;
 }
 
 .input-section:last-child {
